@@ -1,0 +1,79 @@
+{
+  "pages": [
+    {
+      "path": "pages/home/index",
+      "style": {
+        "navigationStyle": "custom",
+        "backgroundColor": "#F5F6F8"
+      }
+    },
+    {
+      "path": "pages/settings/index",
+      "style": {
+        "navigationStyle": "custom",
+        "backgroundColor": "#F5F6F8"
+      }
+    },
+    {
+      "path": "pages/service-entry/index",
+      "style": {
+        "navigationStyle": "custom",
+        "backgroundColor": "#F5F6F8"
+      }
+    },
+    {
+      "path": "pages/action-entry/index",
+      "style": {
+        "navigationStyle": "custom",
+        "backgroundColor": "#F5F6F8"
+      }
+    },
+    {
+      "path": "pages/content-resource/index",
+      "style": {
+        "navigationStyle": "custom",
+        "backgroundColor": "#F5F6F8"
+      }
+    },
+    {
+      "path": "pages/profile-address/index",
+      "style": {
+        "navigationStyle": "custom",
+        "backgroundColor": "#F5F6F8"
+      }
+    },
+    {
+      "path": "pages/profile-assets/index",
+      "style": {
+        "navigationStyle": "custom",
+        "backgroundColor": "#F5F6F8"
+      }
+    },
+    {
+      "path": "pages/profile-asset-detail/index",
+      "style": {
+        "navigationStyle": "custom",
+        "backgroundColor": "#F5F6F8"
+      }
+    },
+    {
+      "path": "pages/updating/index",
+      "style": {
+        "navigationStyle": "custom",
+        "backgroundColor": "#F5F6F8"
+      }
+    },
+    {
+      "path": "pages/notice-detail/index",
+      "style": {
+        "navigationStyle": "custom",
+        "backgroundColor": "#F5F6F8"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationStyle": "custom",
+    "backgroundColor": "#F5F6F8",
+    "backgroundTextStyle": "light"
+  }
+}

@@ -1,0 +1,75 @@
+﻿/**
+ * 文件版本：v0008
+ * 更新时间：2026-03-24 23:58:00
+ * Encoding: UTF-8
+ * 本次更新：统一首页壳层与舞台底色为 #FAFAFA，修正页面底色偏差
+ */
+
+.home-page {
+  width: 100%;
+  min-height: 100dvh;
+  background: #fafafa;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.home-stage-scale-shell {
+  width: 100%;
+  min-height: 100dvh;
+  background: #fafafa;
+}
+
+.home-page.is-drawer-open {
+  height: 100dvh;
+  overflow: hidden;
+}
+
+.home-page.is-global-stage-scaled {
+  overflow: hidden;
+  justify-content: flex-start;
+}
+
+.home-stage {
+  position: relative;
+  width: 100%;
+  min-height: 100dvh;
+  background: #fafafa;
+  padding: 0;
+  box-sizing: border-box;
+  isolation: isolate;
+}
+
+.home-page.is-global-stage-scaled .home-stage {
+  width: 375px;
+  min-height: calc(var(--home-global-stage-height, 100dvh) / var(--home-global-stage-scale, 1));
+  transform: translateX(var(--home-global-stage-offset-x, 0px)) scale(var(--home-global-stage-scale, 1));
+  transform-origin: top left;
+}
+
+.home-page.is-global-stage-scaled .home-stage-scale-shell {
+  min-height: var(--home-global-stage-height, 100dvh);
+}
+
+.home-stage.triple-page-with-stage::before,
+.home-stage.triple-page-with-stage::after {
+  content: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: max(64px, calc((100% - 1296px) / 2));
+  pointer-events: none;
+  z-index: 0;
+}
+
+.home-stage.triple-page-with-stage::before {
+  left: 0;
+  background: radial-gradient(circle at right top, rgba(148, 163, 184, 0.22), transparent 72%);
+  filter: blur(24px);
+}
+
+.home-stage.triple-page-with-stage::after {
+  right: 0;
+  background: radial-gradient(circle at left top, rgba(203, 213, 225, 0.3), transparent 76%);
+  filter: blur(24px);
+}
